@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form  id="Preferences" >
+        <div>
+            <p>Select the number of questions</p>
+            <input type="number" min="1" max="50" value="1"  placeholder= "1" id = "number_of_questions">
+        </div>
+        <div>
+            <label>Select category</label>
+            <select id="Category">
+                <option value="any">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="10">Entartainment: Books</option>
+                <option value="11">Entartainment: Film</option>
+                <option value="12">Entartainment: Music</option>
+                <option value="13">Entartainment: Musicals & Theatres</option>
+                <option value="14">Entartainment: Television</option>
+                <option value="16">Entartainment: Video Games</option>
+                <option value="17">Entartainment: Board Games</option>
+                <option value="18">Science & Nature</option>
+                <option value="19">Science: Computers</option>
+                <option value="20">Science: Mathematics</option>
+                <option value="21">Muthology</option>
+                <option value="22">Sports</option>
+            </select>
+        </div>
+        <div>
+            <label>Select Difficulty</label>
+            <select id="Difficulty">
+                <option value="any">Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div>
+            <label>Select Type</label>
+            <select name="" id="type">
+                <option value="any">Any Type</option>
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+        </div>
+
+        <button type="submit">Start game</button>
+    </form>
+
+    <div id="quiz-page" style="display: none;">
+        <div id="Q">
+            <div>Question number:</div>
+            <div id="Q-number">0</div>
+        </div>
+        <div id="time"> 
+            <div>Time left: </div>
+            <div id="timer">15</div>
+            <div>sec</div>
+        </div>
+        <div id="score">
+            <div>score: </div><div id="score-count">0</div></div>
+
+        <div id="quiz-container" >
+            <div id="question-text"></div>
+            <div id="answers">
+            </div>
+            <button id="next-question">Next Question</button>
+        </div>
+    </div>
+
+    
+    
+    
+        
+
+
+
+<script src="fichier.js"></script>
+</body>
+</html>
+
+

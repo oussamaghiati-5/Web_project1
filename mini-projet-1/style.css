@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(195, 233, 240);
+    color: rgb(17, 135, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 20vh;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+select { 
+    width: 20rem;
+    height: 3rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top:1rem ;
+    border: none;
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5%;
+}
+
+button{
+    width: 10rem;
+    height: 3rem;
+    margin-top:1rem ;
+    border: none;
+    color: rgb(255, 255, 255); 
+    font-size: 15px;
+    background-color: rgb(6, 76, 163);
+    border-radius: 5%;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+#quiz-page {
+    display: grid;
+    grid-template-areas: 
+        "score timer Q_number"
+        "quiz-container quiz-container quiz-container";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 3fr;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    /* border: solid #333; */
+    height: 100vh;
+    width: 100vw;
+}
+
+#score {
+    grid-area: score;
+    /* border: solid #333; */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+}
+
+#time {
+    grid-area: timer;
+    display: flex;
+    /* border: solid #333; */
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+}
+
+#Q_number {
+    grid-area: Q_number;
+    /* border: solid #333; */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+}
+
+#quiz-container {
+    grid-area: quiz-container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: solid #333; */
+    height: 60vh;
+}
+
+#answers { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#answers > button {
+    background-color: white;
+    color: black;
+    width: 40vw;
+    height: 5vh;
+    font-size: 25px;
+}
